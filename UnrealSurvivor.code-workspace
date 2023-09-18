@@ -1,0 +1,884 @@
+{
+	"folders": [
+		{
+			"name": "UnrealSurvivor",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"dotnet.defaultSolution": "UE5/Engine/Source/Programs/UnrealBuildTool/UnrealBuildTool.sln"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "UnrealSurvivor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Test",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"Win64",
+					"Shipping",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Test",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Test",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Test",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Shipping",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Shipping",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivor IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivor IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivor",
+					"IOS",
+					"Shipping",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivorEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"Debug",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivorEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealSurvivorEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"label": "UnrealSurvivorEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"UnrealSurvivorEditor",
+					"Win64",
+					"Development",
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch UnrealSurvivor (Debug)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\UnrealSurvivor\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "UnrealSurvivor Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealSurvivor (DebugGame)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\UnrealSurvivor\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "UnrealSurvivor Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealSurvivor (Development)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\UnrealSurvivor\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "UnrealSurvivor Win64 Development Build",
+				"args": [
+				],
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealSurvivor (Test)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\UnrealSurvivor\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "UnrealSurvivor Win64 Test Build",
+				"args": [
+				],
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealSurvivor (Shipping)",
+				"request": "launch",
+				"program": "D:\\UnrealProjects\\UnrealSurvivor\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "UnrealSurvivor Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealSurvivorEditor (Debug)",
+				"request": "launch",
+				"program": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "UnrealSurvivorEditor Win64 Debug Build",
+				"args": [
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject"
+				],
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealSurvivorEditor (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "UnrealSurvivorEditor Win64 DebugGame Build",
+				"args": [
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject"
+				],
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch UnrealSurvivorEditor (Development)",
+				"request": "launch",
+				"program": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "UnrealSurvivorEditor Win64 Development Build",
+				"args": [
+					"D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject"
+				],
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=D:\\UnrealProjects\\UnrealSurvivor\\UnrealSurvivor.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "E:\\Softwares\\Epic Games\\Games\\UE_5.3"
+			}
+		]
+	}
+}
