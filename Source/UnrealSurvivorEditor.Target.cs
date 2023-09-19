@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class UnrealSurvivorEditorTarget : TargetRules
 {
-	public UnrealSurvivorEditorTarget( TargetInfo Target) : base(Target)
+	public UnrealSurvivorEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
