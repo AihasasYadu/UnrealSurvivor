@@ -17,7 +17,7 @@ ASurvivorCharacter::ASurvivorCharacter()
 	CameraBoom->TargetArmLength = 300.0f;
 
 	ViewCamera = CreateDefaultSubobject<UCameraComponent> (TEXT ("ViewCamera"));
-	ViewCamera->SetupAttachment (GetRootComponent ());
+	ViewCamera->SetupAttachment (CameraBoom);
 }
 
 // Called when the game starts or when spawned
