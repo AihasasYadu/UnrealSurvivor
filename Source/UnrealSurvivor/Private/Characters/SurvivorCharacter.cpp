@@ -47,6 +47,7 @@ void ASurvivorCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	{
 		EnhancedInputComponent->BindAction (MovementAction, ETriggerEvent::Triggered, this, &ASurvivorCharacter::Move);
 		EnhancedInputComponent->BindAction (LookAction, ETriggerEvent::Triggered, this, &ASurvivorCharacter::Look);
+		EnhancedInputComponent->BindAction (JumpAction, ETriggerEvent::Triggered, this, &ASurvivorCharacter::Jump);
 	}
 }
 
@@ -69,4 +70,9 @@ void ASurvivorCharacter::Look(const FInputActionValue &Value)
 
 	AddControllerPitchInput (LookAxisVector.Y);
 	AddControllerYawInput (LookAxisVector.X);
+}
+
+void ASurvivorCharacter::Jump(const FInputActionValue &Value)
+{
+	ACharacter::Jump ();
 }
