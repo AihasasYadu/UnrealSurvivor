@@ -1,0 +1,58 @@
+[
+	{
+		"file": "D:\\UnrealProjects\\UnrealSurvivor\\Source\\UnrealSurvivor\\UnrealSurvivor.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\UnrealProjects\\UnrealSurvivor\\.vscode\\compileCommands_Default\\UnrealSurvivor.1.rsp"
+		],
+		"directory": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnrealProjects\\UnrealSurvivor\\Source\\UnrealSurvivor\\UnrealSurvivor.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\UnrealProjects\\UnrealSurvivor\\.vscode\\compileCommands_Default\\UnrealSurvivor.1.rsp"
+		],
+		"directory": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnrealProjects\\UnrealSurvivor\\Source\\UnrealSurvivor\\UnrealSurvivor.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\UnrealProjects\\UnrealSurvivor\\.vscode\\compileCommands_Default\\UnrealSurvivor.1.rsp"
+		],
+		"directory": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnrealProjects\\UnrealSurvivor\\Source\\UnrealSurvivor\\UnrealSurvivorCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\UnrealProjects\\UnrealSurvivor\\.vscode\\compileCommands_Default\\UnrealSurvivor.1.rsp"
+		],
+		"directory": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnrealProjects\\UnrealSurvivor\\Source\\UnrealSurvivor\\UnrealSurvivorCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\UnrealProjects\\UnrealSurvivor\\.vscode\\compileCommands_Default\\UnrealSurvivor.1.rsp"
+		],
+		"directory": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnrealProjects\\UnrealSurvivor\\Source\\UnrealSurvivor\\UnrealSurvivorGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\UnrealProjects\\UnrealSurvivor\\.vscode\\compileCommands_Default\\UnrealSurvivor.1.rsp"
+		],
+		"directory": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnrealProjects\\UnrealSurvivor\\Source\\UnrealSurvivor\\UnrealSurvivorGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@D:\\UnrealProjects\\UnrealSurvivor\\.vscode\\compileCommands_Default\\UnrealSurvivor.1.rsp"
+		],
+		"directory": "E:\\Softwares\\Epic Games\\Games\\UE_5.3\\Engine\\Source"
+	}
+]
